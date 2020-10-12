@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="main.css">
-    <script src="https://kit.fontawesome.com/133ae44355.js" crossorigin="anonymous"></script>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="main.css" />
+		<script
+			src="https://kit.fontawesome.com/133ae44355.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<!--! Removed some blank lines to tighten up HTML, just a preference -->
+		<div id="wrapper">
+			<header>
+				<h3>Moneybags</h3>
+				<nav>
+					<ul>
+						<a href="#" class="active_nav"><li>Home</li></a>
+						<a href="about.html"><li>About</li> </a>
+						<a href="contact.html"><li>Contact</li></a>
+					</ul>
+				</nav>
+			</header>
 
-    <div id="wrapper">
+			<article class="main-content">
+				<!-- money suitcase image div-->
+				<div class="first_home_container">
+					<section>
+						<h1><span>Banking </span>Reimagined</h1>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe
+							provident pariatur, eveniet quis aliquam soluta.
+						</p>
+						<p><a href="about.html">About Our Bank</a></p>
+					</section>
+				</div>
 
-        <header>
+				<div class="second_home_container">
+					<!-- coins image div-->
+					<section class="coins"></section>
 
-            <h3>Moneybags</h3>
+					<!-- gray background -->
+					<section class="history">
+						<h3><span>The History </span>of Our Bank</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+							beatae nisi aspernatur modi, est veniam similique voluptatum sequi
+							facilis, quisquam dolorum maxime quo cumque ab blanditiis
+							consectetur sint rem magni!
+						</p>
+						<p class="white_btn"><a href="about.html">Read More</a></p>
+					</section>
+				</div>
+				<!-- closes div .second_home_container-->
 
-            <nav>
-                <ul>
-                    <a href="#" class="active_nav"><li>Home</li></a>
-                    <a href="about.html"><li>About</li> </a>
-                    <a href="contact.html"><li>Contact</li></a>
-                </ul>
-            </nav>
-        </header>
+				<div class="third_home_container">
+					<!-- white div background -->
+					<section class="tri_box">
+						<!--! I'd like these (icons) to be a little bit bigger but it may just be my 4:3 ratio -->
+						<i class="fas fa-hotel"></i>
 
-        <article class="main-content">
+						<h3>Great Location</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+							cum, deserunt?
+						</p>
+					</section>
 
-            <!-- money suitcase image div-->
-            <div class="first_home_container">
-                <section>
-                    <h1><span>Banking </span>Reimagined</h1>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe provident pariatur, eveniet quis aliquam soluta.</p>
-                    <p><a href="about.html">About Our Bank</a></p>
-                </section>
-            </div>
+					<!-- green div background -->
+					<section class="tri_box green_bg">
+						<!--! Could have used :nth-child(2) instead of giving a separate class however, you only use it once so I think :nth-child(2) would be a better refactor, however if you where to use it multiple times I like green_bg better. -->
+						<i class="fas fa-piggy-bank"></i>
 
-            <div class="second_home_container">
+						<h3>No ATM Fees</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+							cum, deserunt?
+						</p>
+					</section>
 
-                <!-- coins image div-->
-                <section class="coins">
-                </section>
+					<!-- white div background-->
+					<section class="tri_box">
+						<i class="fas fa-mobile"></i>
 
-                <!-- gray background -->
-                <section class="history">
-                    <h3><span>The History </span>of Our Bank</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam beatae nisi aspernatur modi, est veniam similique voluptatum sequi facilis, quisquam dolorum maxime quo cumque ab blanditiis consectetur sint rem magni!</p>
-                    <p class="white_btn"><a href="about.html">Read More</a></p>
-                </section>
+						<h3>Mobile App</h3>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis
+							cum, deserunt?
+						</p>
+					</section>
+				</div>
+			</article>
 
-            </div><!-- closes div .second_home_container-->
+			<!--! Sample implementation of clr class, not doing anything right now. -->
+			<div class="clr"></div>
 
-            <div class="third_home_container">
-
-                <!-- white div background -->
-                <section class="tri_box">
-                    <i class="fas fa-hotel"></i>
-
-                    <h3>Great Location</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cum, deserunt?</p>
-                </section>
-
-                <!-- green div background -->
-                <section class="tri_box green_bg">
-                    <i class="fas fa-piggy-bank"></i>
-
-                    <h3>No ATM Fees</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cum, deserunt?</p>                    
-                </section>
-
-                <!-- white div background-->
-                <section class="tri_box">
-                    <i class="fas fa-mobile"></i>
-
-                    <h3>Mobile App</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis cum, deserunt?</p>                    
-                </section>
-
-            </div>
-
-        </article>
-
-        <footer><p>Moneybags Bank &#169; 2020, All Rights Reserved</p></footer>
-
-    </div><!-- closes div#wrapper -->
-
-</body>
-
+			<footer><p>Moneybags Bank &#169; 2020, All Rights Reserved</p></footer>
+			<!--! I think its easier to remember &copy; instead of &#169;  -->
+		</div>
+		<!-- closes div#wrapper -->
+	</body>
 </html>
